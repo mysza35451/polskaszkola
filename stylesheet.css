@@ -47,5 +47,7 @@ height: auto;
 .newsCards img{
   max-width: 100%;
   max-height: auto;
+  min-width: 100%;
+  max-height: auto;
   display: block;
 }
