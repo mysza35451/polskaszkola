@@ -1,4 +1,18 @@
 
+*{
+  margin: 1%;
+
+}
+
+.responsive100w{
+  max-width: 100%;
+  max-height: auto;
+  margin: 0%;
+}
+.logoBanner{
+  width: 100%;
+  height: auto;
+}
 .logoImage{
 
 width: 300px;
@@ -10,10 +24,7 @@ height: auto;
 
     background-color: snow;
     opacity: 1;
-    margin-top: 1%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom: 1%;
+    
 
 }
 
@@ -24,7 +35,7 @@ height: auto;
   margin-top: 1%;
 }
 .linkCards img{
-  max-width: 300px;
+  max-width: 95%;
   max-height: auto;
   border-radius: 30%;
   margin-bottom: 30px;
@@ -33,3 +44,8 @@ height: auto;
   transform: scale(1.1); 
 }
 
+.newsCards img{
+  max-width: 100%;
+  max-height: auto;
+  display: block;
+}
