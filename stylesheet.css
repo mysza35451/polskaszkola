@@ -10,7 +10,6 @@
 /* change the background color */
 .navbar-custom {
   background-color: red;
-  background: -webkit-linear-gradient(90deg, white, red );
 
 }
 /* change the brand and text color */
@@ -33,7 +32,8 @@
   
   border-radius: 0 0 30% 30%;
   background-color: red;
-  background: -webkit-linear-gradient(90deg, red, white );
+  background: -webkit-linear-gradient(90deg, white, red );
+  margin-top: 0;
   margin-bottom: 2%;
 }
 .responsive100w{
@@ -65,7 +65,10 @@ height: auto;
 }
 .linkCards{
   margin-top: 1%;
-  background-color: red;
+  background-color: rgb(73, 100, 117);
+
+  border-radius: 3% 3% 3% 3%;
+
   
 }
 .linkCards img{
@@ -86,10 +89,24 @@ height: auto;
   display: block;
 }
 
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:50%;
+  position:relative;
+  height:0;
+}
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 footer {
-  background: lightgray;
+  background: red;
   background: -webkit-linear-gradient(59deg, lightgray, #16222A);
-  background: linear-gradient(59deg, rgb(219, 219, 219), rgb(73, 100, 117));
+  background: linear-gradient(0deg, red, rgb(73, 100, 117));
   color: white;
   margin-top:100px;
 }
@@ -143,12 +160,9 @@ ul.social-network li {
   background-color: #3B5998;
 }
 
-.social-network a.icoLinkedin:hover {
-  background-color: #007bb7;
-}
 
-.social-network a.icoFacebook:hover i,
-.social-network a.icoLinkedin:hover i {
+
+.social-network a.icoFacebook:hover i{
   color: #fff;
 }
 
@@ -168,6 +182,7 @@ ul.social-network li {
   width: 30px;
   height: 30px;
   font-size: 15px;
+  background-image: url(fbicon.jpg);
 }
 
 .social-circle li i {
