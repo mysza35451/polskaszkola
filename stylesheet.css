@@ -28,6 +28,24 @@
 
 
 /* ------------------------ */
+
+/* IMPORTANT NEWS CSS */
+
+.importantNews{
+  width: auto;
+  background-color: rgb(73, 100, 117);
+
+}
+.importantNews h1{
+  color: white;
+  font-weight: bold;
+}
+.importantNews h1 a{
+  color: red;
+}
+
+/* ------------------ */
+
 .center{
   height: auto;
   line-height: 100px;

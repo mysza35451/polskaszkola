@@ -10,7 +10,7 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
+<script src="nav-bar.js"></script>
 
 </head>
 <body >
@@ -18,36 +18,25 @@
 
 
 
-<nav class="navbar navbar-expand-lg navbar-dark navbar-custom static-top text-center">
-  <div class="container">
-    <a href="#" class="navbar-brand">
-      <img  src="logonobg.jpg" height="120" alt="CoolBrand">
-  </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"><b>Strona Główna</b>
-                <span class="sr-only">(current)</span>
-              </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Aktualności</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Administracja</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Kontakt</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<script>drawNavBar()</script>
+
+
+
 <div class="pageContents">
 
+  <!-- Important updates container -->
+
+
+<div class="importantNews text-center">
+
+  <h1>Wpływ <a href="www.google.com">COVID-19</a> na szkołę</h1>
+  
+  
+  </div>
+  
+  
+  <!-- --------------------------- -->
+  
   <div class="text-center frontBackground">
 
     <img class="logoImage" src="logonobg.jpg"/>
@@ -66,7 +55,7 @@
       <div class="card">
         <div class="card-body">
           <img src="card1.jpg"/>
-          <h5 class="card-title">Aktualności</h5>
+          <h5 class="card-title"> <b>Aktualności</b></h5>
           <p class="card-text">Sample Sample Sample Sample</p>
           <a href="#" class="btn btn-dark">Pokaż mi więcej!</a>
         </div>
@@ -76,7 +65,7 @@
       <div class="card">
         <div class="card-body">
           <img src="card2.jpg"/>
-          <h5 class="card-title">Administracja</h5>
+          <h5 class="card-title"><b>Administracja</b></h5>
           <p class="card-text">Sample Sample Sample Sample</p>
           <a href="#" class="btn btn-dark">Pokaż mi więcej!</a>
         </div>
@@ -86,7 +75,7 @@
       <div class="card">
         <div class="card-body">
           <img src="card3.jpg"/>
-          <h5 class="card-title">Szkoła</h5>
+          <h5 class="card-title"><b>Szkoła</b></h5>
           <p class="card-text">Sample Sample Sample Sample</p>
           <a href="#" class="btn btn-dark">Pokaż mi więcej!</a>
         </div>
@@ -95,29 +84,30 @@
   </div>
 </div>
   
-<!-- News cards -->
-<div class="newsCards">
-  <div class="text-center">
-  <h1>Co nowego?</h1>
-  </div>
-<div class="card mb-3 newsCards text-center">
-<img class="responsive100w"  src="card1.jpg"/>
 
-  <div class="card-body">
-    <h3 class="card-title"><b>Bal Karnawałowy</b></h3>
-    <p class="card-text">Dzieci miały okazję wyciągnąć stroje karnawałowe oraz uczesniczyc w zabawach!</p>
-    <p class="card-text"><small class="text-muted">2020</small></p>
-  </div>
-</div>
-</div>
 <!-- map -->
 
-<div class="mapContainer">
-<div class="container-fluid">
-  <div class="map-responsive">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.877000583794!2d-0.3888485313157961!3d51.66615782688555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ab6c355b6c9%3A0xdf95da55b342e110!2sThe%20Watford%20UTC!5e0!3m2!1sen!2suk!4v1588936398856!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="newsCards">
+  
+<div class="card mb-3 newsCards text-center">
+  <div class="container-fluid">
+    <div class="map-responsive">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2942.877000583794!2d-0.3888485313157961!3d51.66615782688555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48766ab6c355b6c9%3A0xdf95da55b342e110!2sThe%20Watford%20UTC!5e0!3m2!1sen!2suk!4v1588936398856!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="card-body">
+    <h3 class="card-title"><b>Nasza Lokalizacja</b></h3>
+    <h4>The Watford UTC</h4>
+    <p>Colonial Way Watford</p>
+    <p>Hertfordshire</p>
+    <p>WD24 4PT</p>
+    <p class="card-text"><small class="text-muted">2018 - Current</small></p>
   </div>
 </div>
+</div>
+
+<div class="mapContainer">
+
 </div>
 
 <!-- -------------- -->
@@ -172,7 +162,7 @@
           </div>
         </div>
         <div class="col-md-12">
-          <h4>Follow Us</h4>
+          <h4>Dowiedz się wiecej:</h4>
               <ul class="social-network social-circle">
                <li><a href="https://www.facebook.com/polskaszkola.wwatford/" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
               </ul>				
